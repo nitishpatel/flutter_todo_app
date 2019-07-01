@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/note_list.dart';
-import 'screens/splashscreen.dart';
+import 'package:mydb_todo/screens/NoteList.dart';
+import 'package:mydb_todo/screens/SplashScreen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,12 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title:"TODO",
+      title: "TODO",
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primaryColor: Color(0xFFb92b27),
+        accentColor: Colors.black,
       ),
       home: SplashScreen(),
-      debugShowCheckedModeBanner: false,
     );
   }
 }

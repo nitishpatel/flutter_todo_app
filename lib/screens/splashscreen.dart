@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'note_list.dart';
+import 'NoteList.dart';
 class SplashScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
