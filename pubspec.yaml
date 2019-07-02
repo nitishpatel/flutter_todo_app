@@ -27,6 +27,8 @@ dependencies:
   sqflite: any
   intl: any
   path_provider: any
+  pie_chart:
+  fl_chart: ^0.0.8
 
 
 dev_dependencies:

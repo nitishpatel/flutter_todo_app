@@ -75,6 +75,14 @@ class DatabaseHelper {
     Database db = await this.database;
     List<Map<String,dynamic>> x = await db.rawQuery("SELECT COUNT (*) FROM $noteTable");
     int result = Sqflite.firstIntValue(x);
+    // print(result);
+    return result;
+  }
+  Future<int> getStatusCount()async{
+    Database db = await this.database;
+    var x = await db.rawQuery("SELECT COUNT (*) FROM $noteTable where $colStatus=1");
+    int result = Sqflite.firstIntValue(x);
+    // print(result);
     return result;
   }
 
